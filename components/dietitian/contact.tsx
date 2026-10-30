@@ -5,7 +5,14 @@ import { ArrowUpRight, Mail, MapPin, MessageCircle, CheckCircle, AlertCircle, Lo
 import { InstagramIcon } from './instagram-icon'
 import { SectionLabel } from './section-label'
 import { services } from './data/services'
-import { supabase } from '@/lib/supabase'
+import { createClient } from '@supabase/supabase-js'
+
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
 
 // TODO: Replace with Afifa's Instagram profile URL
 const INSTAGRAM_URL = 'https://www.instagram.com/dtafifa?srtk=MXNtcmI4MTIxbmNwNw=='
@@ -29,7 +36,7 @@ export function Contact() {
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
     }
 
-    const { error } = await supabase.from('enquiries').insert([data])
+    const { error } = await getSupabase().from('enquiries').insert([data])
 
     if (error) {
       setFormState('error')
