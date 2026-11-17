@@ -1,13 +1,63 @@
 export const services = [
-  { title: 'Fat Loss', text: 'Sustainable nutrition that works with your body, habits, and real life.', icon: '01' },
-  { title: 'Muscle Gain', text: 'Strategic nourishment to help you build strength with confidence.', icon: '02' },
-  { title: 'Diabetes Management', text: 'Personalised support for Type 1, Type 2, and gestational diabetes.', icon: '03' },
-  { title: 'Cardiovascular Health', text: 'Heart-smart eating without giving up the joy of food.', icon: '04' },
-  { title: 'Fatty Liver', text: 'Practical, compassionate guidance to support liver health.', icon: '05' },
-  { title: 'Thyroid Management', text: 'Clear nutrition support for thyroid health and everyday energy.', icon: '06' },
-  { title: 'Pre & Post Pregnancy Diet', text: 'Nourishment through preconception, pregnancy, and postpartum.', icon: '07' },
-  { title: 'Gut Health', text: 'Gentle, evidence-led care for IBS, IBD, ulcers, H. pylori, Crohn\u2019s, and SIBO.', icon: '08' },
-  { title: 'Hyperuricemia', text: 'Food-first support for healthier uric acid levels and wellbeing.', icon: '09' },
-  { title: 'Cancer Care', text: 'Supportive nutritional therapy during and after treatment to manage symptoms and build strength.', icon: '10' },
+  // ── Goals ────────────────────────────────────────────────────────────────
+  {
+    title: 'Weight Management Programs',
+    text: 'Sustainable, science-backed plans to help you reach and maintain a healthy weight — without restriction or guilt.',
+    icon: '01',
+    category: 'Goals',
+  },
+  {
+    title: 'Family Meal Plans',
+    text: 'Balanced, practical meal planning designed to nourish every member of your family — from toddlers to grandparents.',
+    icon: '02',
+    category: 'Goals',
+  },
+  {
+    title: 'Plant-Based Sustainable Nutrition',
+    text: 'Thoughtfully crafted plant-forward plans that meet all your nutritional needs while honouring the planet.',
+    icon: '03',
+    category: 'Goals',
+  },
+
+  // ── Wellbeing ─────────────────────────────────────────────────────────────
+  {
+    title: 'Disease-Specific Therapeutic Diet',
+    text: 'Expert dietary therapy for diabetes, cardiovascular conditions, fatty liver, thyroid disorders, and more — rooted in clinical evidence.',
+    icon: '04',
+    category: 'Wellbeing',
+  },
+  {
+    title: 'Metabolic Health & Hormone Balance',
+    text: 'Targeted nutrition to stabilise metabolism, support hormone regulation, and restore your body\'s natural equilibrium.',
+    icon: '05',
+    category: 'Wellbeing',
+  },
+  {
+    title: 'Gut Health & Digestive Wellness',
+    text: 'Gentle, evidence-led care for IBS, IBD, ulcers, H. pylori, Crohn\'s, and SIBO — because a healthy gut changes everything.',
+    icon: '06',
+    category: 'Wellbeing',
+  },
+  {
+    title: 'Pre & Post Pregnancy Diet',
+    text: 'Compassionate nourishment through preconception, pregnancy, and postpartum — supporting both mother and baby.',
+    icon: '07',
+    category: 'Wellbeing',
+  },
+
+  // ── Specialist ────────────────────────────────────────────────────────────
+
+  {
+    title: 'Geriatric & Senior Wellness',
+    text: 'Nutrient-rich, age-appropriate plans that support strength, independence, and vitality in later life.',
+    icon: '08',
+    category: 'Specialist',
+  },
+  {
+    title: 'Cancer Nutrition Care',
+    text: 'Supportive nutritional therapy during and after treatment to manage side effects, rebuild strength, and improve quality of life.',
+    icon: '09',
+    category: 'Specialist',
+  },
 ]
 

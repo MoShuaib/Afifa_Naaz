@@ -20,7 +20,7 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <article
               key={service.title}
               className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-[0_12px_35px_-28px_hsl(var(--foreground))] transition-all hover:-translate-y-1 hover:border-primary/40 hover:bg-accent lg:p-8"
@@ -28,7 +28,7 @@ export function Services() {
               <div className="flex items-start justify-between">
                 <p className="font-mono text-xs tracking-widest text-primary">{service.icon}</p>
                 <span className="rounded-full border border-primary/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                  {index < 3 ? 'Goals' : index < 6 ? 'Wellbeing' : 'Specialist'}
+                  {service.category}
                 </span>
               </div>
               <h3 className="mt-12 max-w-[14rem] font-serif text-2xl leading-tight">{service.title}</h3>
